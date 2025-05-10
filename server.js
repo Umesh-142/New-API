@@ -29,7 +29,7 @@ app.get("/input", (req, res) => {
   res.status(200).json({ email, Data, Secret });
 });
 
-app.post("/output", (req, res) => {
+app.get("/output", (req, res) => {
   const email = req.query.email;
   if (!validator.isEmail(email)) {
     res.status(400).json({ Error_msg: "Email is not correct", email });
