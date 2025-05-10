@@ -35,7 +35,7 @@ app.get("/output", (req, res) => {
     res.status(400).json({ Error_msg: "Email is not correct", email });
   }
   async function f1() {
-    const resp = await axios.get(`https://new-api-gemo.onrender.com/input?{email}`);
+    const resp = await axios.get(`https://new-api-gemo.onrender.com/input?email=${email}`);
     const data = await resp.data;
     const arr = data.Data;
     if (!Array.isArray(arr)) {
