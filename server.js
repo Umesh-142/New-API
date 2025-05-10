@@ -140,3 +140,10 @@ function getStats(arr) {
     max,
   };
 }
+
+app.get("/", (req, res) => {
+  res.send(
+    `<div><h1>Hello Dear Umesh has successfully deployed api</h1><h2>Server is working fine at ${PORT}</h2></div>`
+  );
+});
+
