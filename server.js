@@ -143,7 +143,11 @@ function getStats(arr) {
 
 app.get("/", (req, res) => {
   res.send(
-    `<div><h1>Hello Dear Umesh has successfully deployed api</h1><h2>Server is working fine at ${PORT}</h2></div>`
+    `<div><h1>Hello Dear Umesh has successfully deployed api</h1>
+    <h2>Server is working fine at ${PORT}</h2>
+    <h2>Check this urls:https://new-api-gemo.onrender.com/input?email=youremail@gmail.com</h2>
+    <h2>Also this :https://new-api-gemo.onrender.com/output?email=youremail@gmail.com</h2>
+    </div>`
   );
 });
 
